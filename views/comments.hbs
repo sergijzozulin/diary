@@ -1,0 +1,83 @@
+<link rel="stylesheet" href="/css/comments.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap" rel="stylesheet">
+<div class="container">
+    <div class="line">
+        <div class="left">
+            <input value="Усі" type="button" class="all input">
+            <input value="Відгуки учнів" type="button" class="pupils input">
+            <input value="Відгуки батьків" type="button" class="parents input">
+            <input value="Відгуки випускників" type="button" class="graduate input">
+        </div>
+        <select name="" id="rating" class="ratting">
+            <option id="five marks" value="5">5 зірок</option>
+            <option id="four marks" value="4">4 зірки</option>
+            <option id="three marks" value="3">3 зірки</option>
+            <option id="two marks" value="2">2 зірки</option>
+            <option id="one marks" value="1">1 зірка</option>
+        </select>
+    </div>
+
+    <div class="comments">
+
+    </div>
+    <button class="button">Більше коментарів</button>
+    <button class="create_comm">Залишити коментар</button>
+</div>
+<div class="form">
+    <form action="/comments" method="post">
+        <div class="head">
+            <p class="form-text">Додати відгук</p>
+            <button type="button" class="close">X</button>
+        </div>
+        <div class="form-wrapper">
+            <div class="personal-info">
+                <div class="box-input">
+                    <label for="second_name" class="for">Прізвище:</label>
+                    <input id="second_name" name="second_name" type="text">
+                </div>
+                
+                <div class="box-input">
+                    <label for="first_name" class="for">Ім'я:</label>
+                    <input id="first_name" name="first_name" type="text">
+                </div>
+
+                <div class="box-input">
+                    <label for="mark" class="for">Оцінка для школи:</label>
+                    <select name="mark">
+                        <option value="5">5</option>
+                        <option value="4">4</option>
+                        <option value="3">3</option>
+                        <option value="2">2</option>
+                        <option value="1">1</option>
+                    </select>
+                </div>
+                <div class="box-input">
+                    <label for="permission" class="for">Хто Ви для школи:</label>
+                    <select name="permission">
+                        <option value="Учень">Учень</option>
+                        <option value="Учениця">Учениця</option>
+                        <option value="Батько учня">Батько учня</option>
+                        <option value="Батько учениці">Батько учениці</option>
+                        <option value="Мама учениці">Мама учениці</option>
+                        <option value="Мама учня">Мама учня</option>
+                        <option value="Випускник">Випускник</option>
+                    </select>
+                </div>
+            </div>
+            <div class="text-box">
+                <label class="feedback" for="comment">Відгук:</label>
+                <textarea id="comment" name="comment" type="text"></textarea>
+                <div class="buttons-box">
+                    <input class="save" value="Відправити" type="submit">
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+<script src="/js/comment.js"></script>

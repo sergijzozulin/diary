@@ -1,0 +1,46 @@
+*{
+	box-sizing: border-box;
+}
+
+body{
+	background: #ccc;
+}
+
+.container{
+	display: flex;
+	flex-wrap: wrap;
+	width: 600px;
+
+	margin: 0 auto;
+}
+.card{
+	width: 100%;
+	height: 400px;
+	padding: 10px;
+	background: #fff;
+	margin: 0 0 10px 0;
+	box-shadow: 0 0 15px -3px rgba(0,0,0,.3);
+	position: relative;
+	transition: transform .3s ease;
+	transform: scale(1);
+	z-index:1;
+}
+.close{
+	position: absolute;
+	right: 10px;
+	display: none;
+}
+.card > *{
+	margin-bottom: 10px;
+}
+.card img{
+	width: 100%;
+}
+.card.active{
+	box-shadow: 0 0 15px 1000vw rgba(0,0,0,.3);
+	transform: scale(1.5);
+	z-index:10;
+}
+.card.active .close{
+	display: block;
+}

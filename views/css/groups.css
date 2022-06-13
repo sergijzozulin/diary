@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+*{    
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+}
+
+
+h2 {
+    text-align: center;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 38px;
+    text-align: center;
+    color: #1266F1;
+    margin-top: 30px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 98%;
+    margin: 0 auto;
+    height: auto;
+}
+
+.input {
+    width: 45%;
+    height: 50px;
+    display: flex;
+}
+.search{
+    width: 50px;
+    border-radius: 12px 0px 0px 12px;
+    height: 100%;
+    background: #F4F4F4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#field {
+    width: calc(100% - 100px);
+    height: 100%;
+    border: 0px;
+    padding: 0 20px 0 20px;
+}
+
+.delete {
+    width: 50px;
+    border-radius: 0 12px 12px 0;
+    height: 100%;
+    background: #F4F4F4;
+    border: 0px;
+}
+
+/* filters */
+
+.filters {
+    display: flex;
+    width: 90%;
+    height: 50px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.filter-field{
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.button-filter {
+    width: 50px;
+    border: 0px;
+    border-radius: 12px 0px 0px 12px;
+    height: 100%;
+    background: #F4F4F4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.arrow {
+    height: 10px;
+    width: 15px;
+    background-image: url(../groups/arrow.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.all-filters {
+    display: none;
+}
+
+.active2 {
+    height: 500px;
+    width: 100%;
+    background: red;
+    margin-bottom: 550px; 
+    display: flex;
+}
+
+.checked {
+    height: 500px;
+    width: 100%;
+    background: red;
+    margin-bottom: 550px;
+}
+
+.down-arrow {
+    height: 10px;
+    width: 15px;
+    background-image: url(../groups/arrow.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    transform: rotate(180deg);
+}
+
+/* cards */
+
+.active{
+    margin-top: 520px !important;
+    width: 90%;
+    position: relative;
+}
+
+.none {
+    margin-top: 20px;
+    width: 90%;
+}
+
+.cards {
+    height: auto;
+    display: flex;
+    height: auto;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: calc((100% / 3) - 40px);
+    height: 300px;
+    background: #FFFFFF;
+    box-shadow: 0px 5px 60px -30px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.downside {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: space-around;
+}
+
+.img{
+    margin-top: 20px;
+}
+
+.sign {
+    height: 50px;
+}
+
+.sign-class {
+    position: absolute;
+    left: 20%;
+    color: white;
+}
+
+.flag {
+    position: relative;
+    display: flex;
+    left: -80px;
+    width: 120px;
+}
+
+.card-creater {
+    width: calc((100% / 3) - 40px);
+    height: 300px;
+    background: #FFFFFF;
+    box-shadow: 0px 5px 60px -30px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.circle {
+    height: 120px;
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0px;
+    background-image: url(../groups/circle.png);
+    background-size: 100%;
+}
+
+/* menu */
+
+
+
+.menu{
+    height: 300px;
+    width: 700px;
+    background: #FFFFFF;
+    position: fixed;
+    top: 30%;
+    left: calc(70% - 700px);
+    margin: 0 auto;
+    z-index: 2;
+    display: none;
+    flex-direction: column;
+    box-shadow: 0px 5px 60px -30px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+}
+
+.menu-top {
+    height: 30px;
+    width: 100%;
+    display: flex;
+    padding: 10px 0 0 10px;
+}
+
+.X {
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    right: 10px;
+}
+
+.target {
+    height: 70%;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: space-around;
+}
+
+.form-wrapper {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+.form__action, .form__input{
+    width: 100%;
+    height: 35px;
+}
+.form-box {
+    width: 45%;
+    margin-top: 20px;
+}
+
+.basket, .save {
+    height: 35px;
+    width: 45%;
+    border-radius: 5px;
+    border: 0px;
+}
+
+.basket {
+    background: #FFDD2C;
+}
+
+.save {
+    background: #1266F1;
+}
+
+.buttons {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}

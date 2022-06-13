@@ -1,0 +1,107 @@
+<link rel="stylesheet" href="/css/attemps.css">
+<link rel="startcut icon" type="image/png" href="/footer/diary.png">
+<title>Attemps</title>
+
+<body>
+    <input type="button" id="save" value="click">
+    <div class="container">
+        <div class="journal">
+            <div class="menu">
+                
+            </div>
+            <div class="month-table">
+                <div class="thead">
+                    <div class="cell name">Прізвище та ім’я учня</div>
+
+                </div>
+                <div class="tbody">
+                    
+                    <div class="row">
+                        <button class="add-student">
+                            <i class="plus">+</i>
+                            Добавити учня
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="add_student">
+        <div class="top_part">
+            Додати учня:
+            <button class="close">X</button>
+        </div>
+        <form class="add-wrapper" action="/api/attemps/2018-2/update" method="post">
+        
+            <div class="add-column-1">
+                <div class="input_box">
+                    <label for="second-name">Прізвище Учня:</label>
+                    <input class="input" id="second-name" type="text" name="second-name">
+                </div>
+                
+
+                <div class="input_box">
+                    <label for="first-name">ім’я Учня:</label>
+                    <input class="input" id="first-name" type="text" name="first-name">
+                </div>
+
+                <div class="input_box">
+                    <label for="birth">День народження:</label>
+                    <input class="input" id="birth" type="text" name="birth">
+                </div>
+
+                <div class="input_box">
+                    <label for="telegram">Telegram Учня:</label>
+                    <input class="input" id="telegram" type="text" name="telegram">
+                </div>
+
+                <div class="input_box">
+                    <label for="Email">Email Учня:</label>
+                    <input class="input" id="Email" type="text" name="Email">
+                </div>
+
+                <div class="input_box">
+                    <label for="login">Логін Учня:</label>
+                    <div class="inline">
+                        <div class="circle">
+                            <img src="/attemps/cube.png">
+                        </div>
+                        <input class="input" id="login" type="text" name="login">
+                    </div>
+                </div>
+
+                <div class="input_box">
+                    <label for="pass">Пароль Учня:</label>
+                    <div class="inline">
+                        <div class="circle">
+                            <img src="/attemps/cube.png">
+                        </div>
+                        <input class="input" id="pass" type="text" name="pass">
+                    </div>
+                </div>
+            </div>
+
+            <div class="add-column-2">
+                <div class="input_box">
+                    <label for="number">Прізвище Учня:</label>
+                    <input class="input" id="number" type="text" name="number">
+                </div>
+                
+                <div class="input_box-2">
+                    <label for="image">Фотографія учня</label>
+                    <div class="input-box2">
+                        <input type="file" name="file" id="image">
+                    </div>
+                </div>
+
+                <div class="box-for-buttons">
+                    <input type="reset" Value="Вид." class="input-clear">
+                    <input type="submit" class="input-send">
+                </div>
+            </div>
+
+        </form>
+    </div>
+    {{>footer}}
+</body>
+<script src="/js/attemps.js"></script>
